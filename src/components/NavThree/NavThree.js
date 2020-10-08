@@ -1,13 +1,23 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import "./stylethree.scss";
+import Logo from "../../icon/Logo3.png";
 
 export default class NavThree extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <h1>NavThree</h1>
+      <headerthree>
+        <div className="nav-logo-three">
+          <img src={Logo} className="logo-three" alt="logo" />
         </div>
-      </div>
+        <nav>
+          <ul className="nav__links-three">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <a className="cta-three" href="#"><buttonthree>Contact</buttonthree></a>
+      </headerthree>
     )
   }
 }
